@@ -1,5 +1,7 @@
 # fa-icon Custom Element
 
+[![npm version](https://badge.fury.io/js/fa-icon-element.svg)](https://badge.fury.io/js/fa-icon-element)
+
 **FontAwesome Version:** v4.7.0
 
 Vanilla custom element that displays
