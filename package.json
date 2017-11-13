@@ -1,6 +1,6 @@
 {
   "name": "fa-icon-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vanilla custom element that displays FontAwesome icons",
   "main": "src/fa-icon.js",
   "directories": {
