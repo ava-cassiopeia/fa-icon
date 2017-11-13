@@ -47,7 +47,7 @@ class FaIcon extends HTMLElement {
      * cases.
      */
     connectedCallback() {
-        this.setupFontImport();
+        FaIcon.setupFontImport();
 
         // setup icon element
         const iconElement = this.shadowRoot.querySelector("i");
@@ -93,8 +93,8 @@ class FaIcon extends HTMLElement {
      * more info, see:
      * http://robdodson.me/at-font-face-doesnt-work-in-shadow-dom/
      */
-    setupFontImport() {
-        if(this.fontImportComplete) {
+    static setupFontImport() {
+        if(FaIcon._fontImportComplete) {
             return;
         }
 
@@ -110,11 +110,11 @@ class FaIcon extends HTMLElement {
         // properly parse the CSS and @font-face declarations)
         styleNode.appendChild(styleText);
 
-        // Important note: we append the style node not to the shadow root but
-        // to the element itself, so that the created style lives in the global
-        // CSS scope. This will not work otherwise.
-        this.appendChild(styleNode);
-        this.fontImportComplete = true;
+        // Important note: we append the style node to the body so that it is 
+        // a part of the global CSS scope, therefore circumventing an issue in 
+        // which browsers would not load @font-face's within a shadow root.
+        document.body.appendChild(styleNode);
+        FaIcon._fontImportComplete = true;
     }
 }
 
