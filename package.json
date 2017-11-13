@@ -1,0 +1,32 @@
+{
+  "name": "fa-icon-element",
+  "version": "1.0.0",
+  "description": "Vanilla custom element that displays FontAwesome icons",
+  "main": "src/fa-icon.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeolingamenfel/fa-icon.git"
+  },
+  "keywords": [
+    "custom-element",
+    "custom",
+    "element",
+    "vanilla",
+    "font-awesome",
+    "FontAwesome",
+    "icons",
+    "icon"
+  ],
+  "author": "Ivan Mattie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeolingamenfel/fa-icon/issues"
+  },
+  "homepage": "https://github.com/aeolingamenfel/fa-icon#readme"
+}
