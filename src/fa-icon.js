@@ -15,15 +15,15 @@ template.innerHTML = `
 `;
 
 /**
- * This is the class that controls each instance of your custom element.
+ * Controlling class for the fa-icon element.
  */
 class FaIcon extends HTMLElement {
     /**
      * Part of the custom element spec. Returns an array of strings that are 
      * the names of attributes that this element observes/listens to.
      * 
-     * @returns {Array} an array of strings, each of which representing an 
-     *  attribute.
+     * @returns {Array<string>} an array of strings, each of which representing
+     *  an attribute.
      */
     static get observedAttributes() {
         return ["name"];
